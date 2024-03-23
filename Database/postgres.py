@@ -1,14 +1,15 @@
 import psycopg2
 import pandas as pd
-
+import os
+from config.config_static_files import *
 
 def Database_connect():
         conn = psycopg2.connect(
             host="localhost",
             port="5432",
-            database="my_db",
-            user="mussie",
-            password="moss"
+            database=ConfigStaticFiles.DB_DATABASE,
+            user=ConfigStaticFiles.DB_USER,
+            password=ConfigStaticFiles.DB_PASSWORD
         )
         return conn
 

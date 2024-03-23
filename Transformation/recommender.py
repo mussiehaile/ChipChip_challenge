@@ -1,7 +1,7 @@
 from Database.postgres import database_extractor
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from Transformation.config.config_static_files import ConfigStaticFiles
+from config.config_static_files import ConfigStaticFiles
 import pandas as pd
 
 
